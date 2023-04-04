@@ -9,14 +9,14 @@ canvas = tk.Canvas(root,width=600,height=600)
 canvas.grid(columnspan=3,rowspan=3)
 
 #logo
-logo = Image.open('logo50.png')
+logo = Image.open('logo70.png')
 logo = ImageTk.PhotoImage(logo)
 logo_label = tk.Label(image=logo)
 logo_label.image = logo
 logo_label.grid(column=1,row=0)
 
 #instructions
-instructions = tk.Label(root, text="Select a PDF file on your PC to extract all its text",font="Ariel")
+instructions = tk.Label(root, text="Select a PDF file on your computer to extract all its text.",font="Ariel")
 instructions.grid(columnspan=3,column=0,row=1)
 
 def open_file():
